@@ -1,0 +1,35 @@
+#多次元配列
+#rangeの値は(0,1,2)
+#{}のなかに変数を入れることで文字列中でも変数を駆使することができる
+x=[1,2,4,7]
+y=[[1,3,5],[2,4,6,]]
+print(y[-2])
+
+for i in range(len(y)):
+    print(f"リストの第{i}成分は{y[i]}")
+
+for j in range(len(y[i])):
+    print(f"リストの第{[i],[j]}成分は{y[i],[j]}")
+#python特有の配列
+
+for item in y:
+    print(item)
+    for val in item:
+        print(val)
+
+#a.append()で配列とか変数に値をいれこむことができる
+N,M=list(map(int,input(),split))
+a=[]
+for i in range (N):
+    a.append(list(map(int,input(),split())))
+
+#0 for i in range(M)とかで対象全部に0をいれる。[]とかでもいける
+N=2
+M=3
+a= [[0 for _ in range(M)] for _ in range(N)]
+print(a)
+
+M=10
+a=[[] for _ in range(M)]
+print(a)
+
